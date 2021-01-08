@@ -2,7 +2,7 @@
   <div id="app">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">Veganismo en Parques</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,13 +12,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Qué hacemos</a>
+              <a @click="collapseMenu" class="nav-link js-scroll-trigger" href="#about">Qué hacemos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#participar">Cómo participar</a>
+              <a @click="collapseMenu" class="nav-link js-scroll-trigger" href="#participar">Cómo participar</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Material</a>
+              <a @click="collapseMenu" class="nav-link js-scroll-trigger" href="#portfolio">Material</a>
             </li>
             <li class="nav-item">
               <a target="_blank" class="nav-link js-scroll-trigger" href="https://docs.google.com/forms/d/e/1FAIpQLSejkhGf3g2TvVt5ckGjFqbUE5R_LHWK7uscc7lCG7JgvO11Xw/viewform">Inscribite!</a>
@@ -35,7 +35,7 @@
       <div class="container">
         <div class="intro-text">
           <div class="intro-lead-in">Les damos la bienvenida a Veganismo en Parques!</div>
-          <div class="intro-heading">Activismo autogestivo y descentralizado por los derechos animales</div>
+          <div class="intro-heading">Activismo autogestivo y descentralizado por los derechos animales.</div>
           <img src="./assets/img/scroll.png" alt="scroll" class="scroll-icon">
         </div>
       </div>
@@ -163,8 +163,8 @@
             <span class="copyright">veganismoenparques@gmail.com</span>
           </div>
           <div class="col-md-4">
-            <a style="align-self:center" target="_blank" href="https://www.instagram.com/veganismoenparques/"><img class="header-icon" src="../src/assets/img/instagram-logo.png" alt=""></a>
-            <a style="align-self:center" target="_blank" href="https://linktr.ee/veganismoenparques"><img class="header-icon" src="../src/assets/img/books-icon.png" alt=""></a>
+            <a style="align-self:center" target="_blank" href="https://www.instagram.com/veganismoenparques/"><img class="header-icon footer-icon" src="../src/assets/img/instagram-logo.png" alt=""></a>
+            <a style="align-self:center" target="_blank" href="https://linktr.ee/veganismoenparques"><img class="header-icon footer-icon" src="../src/assets/img/books-icon.png" alt=""></a>
           </div>
         </div>
       </div>
@@ -178,6 +178,11 @@ import Portfolio from './components/Portfolio'
 
 export default {
   name: 'app',
+  methods: {
+    collapseMenu: function(event){
+      document.getElementById("navbarResponsive").classList.remove("show");
+    }
+  },
   components: {
     Portfolio
   }

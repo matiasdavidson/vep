@@ -65,11 +65,24 @@ section h3.section-subheading {
   background-position: 13px 4px;
 }
 
+@media (max-width:768px) {
+  .timeline-image1 {
+    background-position: 5px 4px;
+  }
+}
+
+
 .timeline-image2 {
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Books_Flat_Icon_Vector.svg/1226px-Books_Flat_Icon_Vector.svg.png');
   background-size: 74%;
   background-repeat: no-repeat;
   background-position: 20px;
+}
+
+@media (max-width:768px) {
+  .timeline-image2 {
+    background-position: 12px;
+  }
 }
 
 .timeline-image3 {
@@ -222,9 +235,23 @@ header.masthead {
   background-position-y: -160px;
 }
 
+@media (max-width: 768px) {
+  header.masthead {
+    background-size: cover;
+    background-position-y: 0px;
+  }
+}
+
 header.masthead .intro-text {
   padding-top: 150px;
   padding-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+  header.masthead .intro-text {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
 }
 
 header.masthead .intro-text .intro-lead-in {
@@ -257,9 +284,21 @@ header.masthead .intro-text .intro-heading {
   margin: 0 10px 5px;
 }
 
+@media (max-width: 768px) {
+  .header-icon {
+    margin: 10px 0 10px;
+  }
+}
+
 .footer-icon {
-  -webkit-filter: invert(1);
-  filter: invert(1);
+  /*   -webkit-filter: invert(1);
+  filter: invert(1); */
+}
+
+@media (max-width: 768px) {
+  .footer-icon {
+    margin: 0 10px;
+  }
 }
 
 .about-text {
@@ -277,7 +316,11 @@ header.masthead .intro-text .intro-heading {
   border-radius: 200px;
 }
 
-
+@media (max-width: 768px) {
+  .language-flag {
+    margin: 10px
+  }
+}
 
 @media (min-width:768px) {
   header.masthead .intro-text {
@@ -302,9 +345,22 @@ header.masthead .intro-text .intro-heading {
   }
 }
 
+@media (max-width: 768px) {
+  header.masthead .intro-text .intro-heading {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
 .scroll-icon {
   width: 50px;
   color: white;
+}
+
+@media (max-width: 768px) {
+  .scroll-icon {
+    display: none;
+  }
 }
 
 .cv-img {
