@@ -21,10 +21,10 @@
               <a @click="collapseMenu" class="nav-link js-scroll-trigger" href="#portfolio">Material</a>
             </li>
             <li class="nav-item">
-              <a target="_blank" class="nav-link js-scroll-trigger" href="https://docs.google.com/forms/d/e/1FAIpQLSejkhGf3g2TvVt5ckGjFqbUE5R_LHWK7uscc7lCG7JgvO11Xw/viewform">Inscribite!</a>
+              <a @click="collapseMenu" target="_blank" class="nav-link js-scroll-trigger" href="https://docs.google.com/forms/d/e/1FAIpQLSejkhGf3g2TvVt5ckGjFqbUE5R_LHWK7uscc7lCG7JgvO11Xw/viewform">Inscribite!</a>
             </li>
-            <a style="align-self:center" target="_blank" href="https://www.instagram.com/veganismoenparques/"><img class="header-icon" src="../src/assets/img/instagram-logo.png" alt=""></a>
-            <a style="align-self:center" target="_blank" href="https://linktr.ee/veganismoenparques"><img class="header-icon" src="../src/assets/img/books-icon.png" alt=""></a>
+            <a @click="collapseMenu" style="align-self:center" target="_blank" href="https://www.instagram.com/veganismoenparques/"><img class="header-icon" src="../src/assets/img/instagram-logo.png" alt=""></a>
+            <a @click="collapseMenu" style="align-self:center" target="_blank" href="https://linktr.ee/veganismoenparques"><img class="header-icon" src="../src/assets/img/books-icon.png" alt=""></a>
           </ul>
         </div>
       </div>
@@ -109,7 +109,7 @@
                     <h4 class="subheading">Aprendamos acerca de derechos animales</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Para poder ser eficientes en nuestro activismo, es necesario que nos formemos. Para eso, tenemos mucha información, libros, textos, talleres y videos para contar con herramientas para el activismo. Hacé click <a href="https://linktr.ee/veganismoenparques">aquí</a> para ver el material.</p>
+                    <p class="text-muted">Para poder ser eficientes en nuestro activismo, es necesario que nos formemos. Para eso, tenemos mucha información muy interesante para compartirte: libros, textos, talleres y videos para contar con herramientas para el activismo. Hacé click <a href="https://linktr.ee/veganismoenparques">aquí</a> para ver el material!</p>
                   </div>
                 </div>
               </li>
@@ -179,7 +179,7 @@ import Portfolio from './components/Portfolio'
 export default {
   name: 'app',
   methods: {
-    collapseMenu: function(event){
+    collapseMenu: function(){
       document.getElementById("navbarResponsive").classList.remove("show");
     }
   },
