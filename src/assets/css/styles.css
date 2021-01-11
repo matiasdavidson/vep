@@ -57,6 +57,12 @@ section h3.section-subheading {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
+@media(max-width: 768px) {
+  section h3.section-subheading {
+    font-size: 18px;
+  }
+}
+
 .timeline-image1 {
   background-image: url('https://image.flaticon.com/icons/png/512/1486/1486433.png');
   background-size: 90%;
